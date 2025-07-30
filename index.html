@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAPC Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+      background-size: contain;
+    }
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 360px;
+    }
+    .login-box .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .login-box .logo img {
+      height: 40px;
+    }
+    .login-box .cancel {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      color: #444;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .password-wrapper {
+      position: relative;
+    }
+    .password-wrapper button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: none;
+      border: none;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .login-box button.signin {
+      background: #0066ff;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .login-box .links {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #666;
+    }
+    .or-divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .or-divider::before,
+    .or-divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+    .or-divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+    .or-divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+    .login-box button.create {
+      background: none;
+      border: 1px solid #0066ff;
+      color: #0066ff;
+      padding: 12px;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function goToDashboard() {
+      window.location.href = "aapclogin.html"; // Change to your actual next page URL
+    }
+  </script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <a href="#" class="cancel">&lt; Cancel</a>
+      <div class="logo">
+        <img src="aapclogo2.png" alt="AAPC Logo">
+      </div>
+      <input type="text" placeholder="Username">
+      <div class="password-wrapper">
+        <input type="password" placeholder="Password">
+        <button type="button">SHOW</button>
+      </div>
+      <button class="signin" onclick="goToDashboard()">SIGN IN</button>
+      <div class="links">
+        <p>Forgot password?</p>
+      </div>
+      <div class="or-divider">Or</div>
+      <button class="create">CREATE AN ACCOUNT</button>
+    </div>
+  </div>
+</body>
+</html>

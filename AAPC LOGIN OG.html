@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses and Exams - AAPC</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #1a1a1a;
+    }
+    header, footer {
+      background: #003f44;
+      color: white;
+      padding: 20px;
+    }
+    header nav a, footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .container {
+      display: flex;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1200px;
+    }
+    .sidebar {
+      width: 240px;
+      margin-right: 30px;
+    }
+    .sidebar h3 {
+      background: #6fb0a1;
+      color: white;
+      padding: 10px;
+      margin-top: 0;
+      border-radius: 4px 4px 0 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      border: 1px solid #ccc;
+    }
+    .sidebar ul li {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .sidebar ul li.active {
+      color: #cc6633;
+      font-weight: bold;
+    }
+    .sidebar .profile-box {
+      margin-top: 20px;
+      background: #e6f0ed;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    .sidebar .profile-box p {
+      margin: 10px 0 0;
+    }
+    .main-content {
+      flex: 1;
+    }
+    .breadcrumb {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .section-header a {
+      color: #007e8a;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .table th, .table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    .table th {
+      background: #f3f3f3;
+    }
+    footer {
+      font-size: 13px;
+      text-align: center;
+    }
+    .footer-links {
+      margin: 10px 0;
+    }
+    .social-icons img, .store-icons img {
+      height: 20px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <nav>
+        <a href="#">What’s New</a>
+        <a href="#">About Us</a>
+        <a href="#">Support</a>
+        <a href="#">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h3>My Account</h3>
+      <ul>
+        <li>Overview</li>
+        <li>Purchases</li>
+        <li>Subscriptions</li>
+        <li class="active">Courses and Exams</li>
+        <li>Certifications and CEUs</li>
+        <li>Profile/Preferences</li>
+        <li>Membership</li>
+        <li>Benefits</li>
+        <li>Local Chapter</li>
+        <li>Apprentice</li>
+      </ul>
+      <div class="profile-box">
+        <strong>Your Profile</strong>
+        <div style="background:#ccc;height:10px;width:100%;margin-top:10px;border-radius:4px;">
+          <div style="background:#2e8b57;height:10px;width:62%;border-radius:4px;"></div>
+        </div>
+        <p>Your Profile is 62% Complete<br><a href="#">Update Profile</a></p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="breadcrumb">Home > My Account > Courses and Exams</div>
+      <h2>Courses and Exams</h2>
+      <p>Find all your course/exam data here including grades. Get access to your course materials.</p>
+
+      <div class="section">
+        <div class="section-header">
+          <strong>AAPC Courses</strong>
+          <a href="#">FIND AAPC TRAINING COURSES &gt;</a>
+        </div>
+        <p>No Results. <a href="#">Find AAPC Training Courses</a>.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <strong>Partner Courses</strong>
+          <a href="#">FIND PARTNER TRAINING COURSES &gt;</a>
+        </div>
+        <p>No Results. <a href="#">Find Partner Training Courses</a>.</p>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <strong>Exams</strong>
+          <a href="#">SCHEDULE AN EXAM &gt;</a>
+        </div>
+        <table class="table">
+          <tr>
+            <th>Exam</th>
+            <th>Title</th>
+            <th>Exam Date/Time</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>CPC</td>
+            <td><a href="examresults.html">Electronic Exam - Calicut, Kerala</a></td>
+            <td>Aug 06, 2025 10:00 AM</td>
+            <td>PASS</td>
+          </tr>
+          <tr>
+            <td>CPC</td>
+            <td><a href="examresult.html">Electronic Exam - Calicut, Kerala</a></td>
+            <td>Nov 27, 2024 10:00 AM</td>
+            <td>FAIL</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <strong>Practice Exams</strong>
+          <a href="#">GET PRACTICE EXAMS &gt;</a>
+        </div>
+        <p>No Results. <a href="#">Buy Practice Exams</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      &copy; 2025 AAPC &nbsp; | &nbsp; About &nbsp; | &nbsp; AAPC Codify &nbsp; | &nbsp; Privacy Policy &nbsp; | &nbsp; Terms & Conditions &nbsp; | &nbsp; Careers &nbsp; | &nbsp; Advertise with Us &nbsp; | &nbsp; Contact Us
+    </div>
+    <div class="social-icons">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png"/>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"/>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"/>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"/>
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"/>
+    </div>
+    <div class="store-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height="30"/>
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" height="30"/>
+    </div>
+  </footer>
+</body>
+</html>
